@@ -18,7 +18,7 @@ var playerOneButton = document.querySelector(".player1-btn")
 playerOneButton.addEventListener('click',function(){
     var playerOneInput = document.querySelector(".player1-name")
     var playerOneIdentity = document.querySelector(".player1-output")
-    playerOneIdentity.textContent = "Player 1 is" + (playerOneInput.value)
+    playerOneIdentity.textContent = "Player 1 is" + " " + (playerOneInput.value)
 })
 
 // Recognizing Player 2 identity
@@ -28,7 +28,7 @@ var playerTwoButton = document.querySelector(".player2-btn")
 playerTwoButton.addEventListener('click',function(){
     var playerTwoInput = document.querySelector(".player2-name")
     var playerTwoIdentity = document.querySelector(".player2-output")
-    playerTwoIdentity.textContent = "Player 2 is" + (playerTwoInput.value)
+    playerTwoIdentity.textContent = "Player 2 is" + " " + (playerTwoInput.value)
 })
 
 
@@ -49,9 +49,9 @@ var playerSeq = document.querySelector(".playerTurn")
 // Displaying player queues
 playerSeq.textContent= playerCounter
 if (playerSeq.textContent==0){
-    playerSeq.textContent = playerOneName.textContent + "," + "it's your turn"
+    playerSeq.textContent = playerOneName.textContent + "" + "it's your turn"
 }else{
-    playerSeq.textContent=playerTwoName.textContent + "," + "it's your turn"
+    playerSeq.textContent=playerTwoName.textContent + "" + "it's your turn"
 }
 
 // Game simulation activity code
